@@ -226,3 +226,10 @@ button {
 #pad {
   height: 80px;
 }
+
+.nail-img {
+  position: relative;
+  width: 25px;
+  height: auto;
+  z-index: 1;
+}
