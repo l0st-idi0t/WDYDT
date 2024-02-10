@@ -137,7 +137,7 @@ Keep going, the best is yet to come!
   const shuffled = woe.sort(() => 0.5 - Math.random());
 
   // Get sub-array of first n elements after shuffled
-  let selected = shuffled.slice(0, 10);
+  let selected = shuffled.slice(0, 17);
 
   for (w of selected) {
     createEncouragement(w);
