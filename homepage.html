@@ -1,36 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <title>What Did You Do Today?</title>
-    <center>
-        <header>
-            <h1>What did you do today?</h1>
-        </header>
-        <body>
-            <div>
-                <form id="share" onsubmit="alertMessage()">
-                    Share with us something you did today.<br><br>
-                    <div class="inputBg">
-                        <img src="textfield.png" class="inputImg">
-                        <input type="text" id="accomplishment" class="inputText">
-                    </div>
-                    <button type="submit" class="btnStyle"><img src="button.png" class="btnImg"></button>
-                    
-                </form>
-            </div>
-        </body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <title>What Did You Do Today?</title>
+  <center>
+    <header>
+      <h1>What did you do today?</h1>
+    </header>
+    <body>
+      <div>
+        <form id="share" onsubmit="alertMessage()">
+          Share with us something you did today.<br /><br />
+          <div class="inputBg">
+            <img src="textfield.png" class="inputImg" />
+            <input type="text" id="accomplishment" class="inputText" />
+          </div>
+          <button type="submit" class="btnStyle">
+            <img src="button.png" class="btnImg" />
+          </button>
+        </form>
+      </div>
+    </body>
 
-        <header>
-            <a href="board.html" target="_blank"><br>Give Encouragement</a>
-        </header>
-    </center>
+    <header>
+      <a href="board.html" target="_blank"><br />Give Encouragement</a>
+    </header>
+  </center>
 
-    <script>
-        function alertMessage(){
-            alert(document.getElementById("accomplishment").value);
-        }
-    </script>
-    
+  <script>
+    function alertMessage() {
+      alert(document.getElementById("accomplishment").value);
+    }
+  </script>
 </html>
