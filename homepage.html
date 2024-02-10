@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <title>What Did You Do Today?</title>
+    <center>
+        <header>
+            <h1>What did you do today?</h1>
+        </header>
+        <body>
+            <form id="share" onsubmit="alertMessage()">
+                Share with us something you did today.<br><br>
+                <input type="text" id="accomplishment">
+                <button type="submit">Share</button>
+            </form>
+        </body>
+
+        <header>
+            <a href="https://www.youtube.com" target="_blank">Give Encouragement</a>
+        </header>
+    </center>
+
+    <script>
+        function alertMessage(){
+            alert(document.getElementById("accomplishment").value);
+        }
+    </script>
+    
+</html>
