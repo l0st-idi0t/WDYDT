@@ -179,7 +179,7 @@ button {
   transform: scale(1.1);
 }
 
-.stickyContainer {
+#stickyContainer {
   display: flex;
   flex-direction: column;
   align-items: main;
@@ -209,6 +209,7 @@ button {
   height: 50px;
   border: 0px;
   align-self: flex-start;
+  padding-bottom: 10px;
 }
 
 #replyForm {
@@ -223,6 +224,17 @@ button {
   position: absolute;
   right: 100%;
 }
-#pad {
+
+.pad {
   height: 80px;
+}
+
+.commentPad {
+  height: 20px;
+}
+
+#commentSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
