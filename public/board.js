@@ -1,4 +1,4 @@
-const notesContainer = document.getElementById("box");
+const notesContainer = document.getElementById("todayNotesContent");
 
 function createNote(id, value) {
   const note = document.createElement("textarea");
