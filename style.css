@@ -8,6 +8,14 @@ html {
   cursor: url("imgs/cursor.png"), auto;
 }
 
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+}
+
 .btnStyle {
   border: none;
   cursor: pointer;
