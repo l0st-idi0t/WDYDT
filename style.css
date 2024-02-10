@@ -1,46 +1,57 @@
 .btnStyle {
-  border: none;
-  cursor: pointer;
-  appearance: none;
-  background-color: inherit;
-  padding: 0;
-  width: 120px;
-  height: 50px;
-}
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    padding: 0;
+    width: 120px;
+    height: 50px;
+  }
 
-.btnImg {
-  width: 120px;
-  height: 50px;
-  display: block;
-}
+  .btnImg {
+    width: 120px;
+    height: 50px;
+    display: block;
+  }
+  
+  .inputText {
+    position: absolute;
+    border: 0;
+    color: #000;
+    font-size: 20px;
+    text-align: left;
+    outline: none;
+    width: 300px;
+    height: 35px;
+    left: calc(50% - 150px);
+  }
+  
+  .inputImg {
+    height: 50px;
+  }
+  
+  .inputBg {
+    background-size: 50%;
+  }
+  
+  #share {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
 
-.inputText {
-  position: absolute;
-  border: 0;
-  color: #000;
-  font-size: 20px;
-  text-align: left;
-  outline: none;
-  width: 300px;
-  height: 35px;
-  left: calc(50% - 150px);
-}
+  .lowerDecoration {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+  }
 
-.inputImg {
-  height: 50px;
-}
-
-.inputBg {
-  background-size: 50%;
-}
-
-#share {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-}
-
+  #person {
+    width: 586px;
+    height: 347px;
+  }
 .box{
     display: flex;
     flex-direction: column;
