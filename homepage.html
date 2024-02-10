@@ -1,34 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
   </head>
   <title>What Did You Do Today?</title>
-  <center>
-    <header>
-      <img src="title.png" width="300px" height="180px">
-    </header>
-    <body>
-      <div>
-        <form id="share" onsubmit="alertMessage()">
-          <div class="inputBg">
-            <img src="textfield.png" class="inputImg" />
-            <input type="text" id="accomplishment" class="inputText" placeholder="Share something you did today"/>
-          </div>
-          <button type="submit" class="btnStyle">
-            <img src="button.png" class="btnImg" />
-          </button>
-        </form>
-        <div class="lowerDecoration">
-          <img src="flowers.png">
-          <img id="person" src="sunshineSleep.png">
+  <header class="header">
+    <img src="imgs/wdydt.png" id="wdydt" />
+  </header>
+  <body>
+    <div>
+      <form id="share" onsubmit="alertMessage()">
+        <div class="inputBg">
+          <img src="imgs/textfield.png" class="inputImg" />
+          <input type="text" id="accomplishment" class="inputText" />
         </div>
-    </body>
-
-    <header>
-      <a href="board.html" target="_self"><br />Give Encouragement</a>
-    </header>
-  </center>
+        <button type="submit" class="btnStyle">
+          <img src="imgs/button.png" class="btnImg" />
+        </button>
+      </form>
+    </div>
+    <div class="bottom">
+      <img src="imgs/flowers.png" id="flowers" />
+      <img src="imgs/sleep.png" id="sleep" />
+    </div>
+  </body>
 
   <script>
     function alertMessage() {
