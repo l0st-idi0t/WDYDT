@@ -65,7 +65,7 @@ async function createEncouragement(content) {
     }),
   });
 }
-async function createEncouragement(reply_message_uuid, content) {
+async function createReply(reply_message_uuid, content) {
   await fetch("http://localhost:4000/create_reply", {
     headers: {
       Accept: "application/json",
