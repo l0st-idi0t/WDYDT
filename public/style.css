@@ -192,7 +192,7 @@ button {
 }
 
 .bigSticky {
-  background-color: rgb(246, 244, 118);
+  background-color: #eeefa5;
   width: 100%;
   min-height: 200px;
   height: fit-content;
@@ -200,22 +200,24 @@ button {
   position: relative;
   padding-bottom: 50px;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 150%;
 }
 
 .stickyTop {
-  background-color: rgba(159, 158, 69, 0.642);
+  background-color: #e3e49f;
   height: 20px;
 }
 
 .comments {
-  display: block;
+  display: flex;
   background-color: rgb(245, 140, 113);
   width: 50%;
-  height: 50px;
+  height: 20px;
   border: 0px;
-  align-self: flex-start;
   padding-bottom: 10px;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  padding: 20px;
 }
 
 #replyForm {
@@ -224,6 +226,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   width: 50%;
+  margin-top: 10px;
 }
 
 #replyInput {
@@ -250,4 +253,5 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 20px;
 }
