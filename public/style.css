@@ -105,20 +105,10 @@ button {
   cursor: url("imgs/pointer.png"), auto;
 }
 
-.board-container {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  width: 90%;
-  height: 100%;
-  margin-top: 20px;
-  margin-left: 10%;
-}
-
-.board {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
+#box {
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgb(6, 179, 247);
 }
 
 .notes {
