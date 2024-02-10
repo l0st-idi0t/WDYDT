@@ -141,10 +141,12 @@ button {
 }
 
 .notes .note {
-  background-color: #f0f0f0;
+  background-color: #ecf570;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 5px;
+  height: fit-content;
+  width: 150px;
 }
 
 .board,
