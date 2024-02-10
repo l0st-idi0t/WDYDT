@@ -36,6 +36,11 @@ img {
   height: 50px;
   display: block;
   cursor: url("imgs/pointer.png"), auto;
+  transition: 0.3s;
+}
+
+.btnImg:hover {
+  transform: scale(1.1);
 }
 
 .inputText {
@@ -151,8 +156,8 @@ button {
   padding: 0;
 }
 
-.backBtn{
-  position:fixed;
+.backBtn {
+  position: fixed;
   border: none;
   cursor: pointer;
   background-color: inherit;
@@ -161,13 +166,19 @@ button {
   left: 20px;
 }
 
-.backBtnImg{
+.backBtnImg {
   width: 70px;
   height: 50px;
   display: block;
+  transition: 0.3s;
+  cursor: url("imgs/pointer.png"), auto;
 }
 
-.stickyContainer{
+.backBtnImg:hover {
+  transform: scale(1.1);
+}
+
+.stickyContainer {
   display: flex;
   flex-direction: column;
   align-items: main;
@@ -176,29 +187,28 @@ button {
   min-height: 300px;
 }
 
-.bigSticky{
+.bigSticky {
   background-color: rgb(246, 244, 118);
   width: 100%;
   height: fit-content;
-  border:10px;
-  position:relative;
+  border: 10px;
+  position: relative;
   padding-bottom: 50px;
 }
 
-.stickyTop{
+.stickyTop {
   background-color: rgba(159, 158, 69, 0.642);
-  height:20px;
+  height: 20px;
 }
 
-.comments{
-  display:block;
+.comments {
+  display: block;
   background-color: rgb(245, 140, 113);
   width: 50%;
   height: 50px;
-  border:0px;
+  border: 0px;
   align-self: flex-start;
 }
-
 
 #replyForm {
   display: flex;
@@ -210,7 +220,7 @@ button {
 
 #replyInput {
   position: absolute;
-  right:100%;
+  right: 100%;
 }
 #pad {
   height: 80px;
