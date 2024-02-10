@@ -187,17 +187,19 @@ button {
   flex-direction: column;
   align-items: main;
   justify-content: space-evenly;
-  width: 1000px;
-  min-height: 300px;
+  width: 500px;
+  min-height: 400px;
 }
 
 .bigSticky {
   background-color: rgb(246, 244, 118);
   width: 100%;
+  min-height: 200px;
   height: fit-content;
   border: 10px;
   position: relative;
   padding-bottom: 50px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .stickyTop {
