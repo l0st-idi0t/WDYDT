@@ -81,6 +81,7 @@ img {
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
+  z-index: -1;
 }
 
 #flowers {
