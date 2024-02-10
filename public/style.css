@@ -229,6 +229,13 @@ button {
   height: 80px;
 }
 
+.nail-img {
+  position: relative;
+  width: 25px;
+  height: auto;
+  z-index: 1;
+}
+
 .commentPad {
   height: 20px;
 }
