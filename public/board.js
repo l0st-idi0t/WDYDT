@@ -1,15 +1,5 @@
 const notesContainer = document.getElementById("todayNotesContent");
 
-// function createNote(id, text) {
-//   const note = document.createElement("textarea");
-//   note.setAttribute("readonly", "true");
-
-//   note.classList.add("note");
-//   note.value = text;
-
-//   notesContainer.appendChild(note);
-// }
-
 function createNote(id, text) {
   const note = document.createElement("button");
  
@@ -19,3 +9,11 @@ function createNote(id, text) {
 
   notesContainer.appendChild(note);
 }
+
+
+(async() => {
+  const messages = await getMessagesCreatedToday();
+  for (const message of messages) {
+    createNote(message["uuid"], message["content"]);
+  }
+})()

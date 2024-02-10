@@ -1,5 +1,5 @@
 async function getMessagesCreatedToday() {
-  await (
+  return await (
     await fetch("http://localhost:4000/messages_today", {
       headers: {
         Accept: "application/json",
@@ -11,7 +11,7 @@ async function getMessagesCreatedToday() {
 }
 
 async function getEncouragementsCreatedToday() {
-  await (
+  return (
     await fetch("http://localhost:4000/encouragements_today", {
       headers: {
         Accept: "application/json",
@@ -26,7 +26,7 @@ async function fetchReplies(reply_message_uuid) {
   return await (
     await fetch(
       "http://localhost:4000/fetch_replies?" +
-        +new URLSearchParams(
+        new URLSearchParams(
           {
             reply_message_uuid: reply_message_uuid,
           },
