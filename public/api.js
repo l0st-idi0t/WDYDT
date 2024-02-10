@@ -10,18 +10,6 @@ async function getMessagesCreatedToday() {
   ).json();
 }
 
-async function getEncouragementsCreatedToday() {
-  return (
-    await fetch("http://localhost:4000/encouragements_today", {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      method: "GET",
-    })
-  ).json();
-}
-
 async function fetchReplies(reply_message_uuid) {
   return await (
     await fetch(
@@ -43,18 +31,6 @@ async function fetchReplies(reply_message_uuid) {
 }
 async function createMessage(content) {
   await fetch("http://localhost:4000/create_message", {
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    method: "POST",
-    body: JSON.stringify({
-      content: content,
-    }),
-  });
-}
-async function createEncouragement(content) {
-  await fetch("http://localhost:4000/create_encouragement", {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
