@@ -54,6 +54,7 @@ img {
   height: 35px;
   left: calc(50% - 150px);
   cursor: url("imgs/typing.png"), auto;
+  font-family: "Indie Flower", cursive;
 }
 
 .inputImg {
