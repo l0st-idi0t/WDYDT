@@ -8,12 +8,16 @@ const note = document.getElementById("stickyNote");
 const commentContainer = document.getElementById("commentSection");
 const replyForm = document.getElementById("replyForm");
 const uuid = new URLSearchParams(window.location.search).get("uuid");
+const colors = ["#FFEDAC", "#FEAFAF", "#A5E6EF", "#BFFDAA"];
 
 function addComment(text) {
   const comment = document.createElement("div");
 
   comment.classList.add("comments");
   comment.innerHTML = text;
+  // randomize color
+  comment.style.backgroundColor =
+    colors[Math.floor(Math.random() * colors.length)];
 
   commentContainer.appendChild(comment);
 
