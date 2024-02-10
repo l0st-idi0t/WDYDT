@@ -50,6 +50,15 @@
     background:rgb(207, 204, 200);
 }
 
+.whiteBox{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width:100%;
+    height:20px;
+    background:rgb(255, 255, 255);
+}
+
 .stickyNote {
     width:10%;
     height:40%;
