@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <title>What Did You Do Today?</title>
     <center>
         <header>
             <h1>What did you do today?</h1>
         </header>
         <body>
-            <form id="share" onsubmit="alertMessage()">
-                Share with us something you did today.<br><br>
-                <input type="text" id="accomplishment">
-                <button type="submit">Share</button>
-            </form>
+            <div>
+                <form id="share" onsubmit="alertMessage()">
+                    Share with us something you did today.<br><br>
+                    <div class="inputBg">
+                        <img src="textfield.png" class="inputImg">
+                        <input type="text" id="accomplishment" class="inputText">
+                    </div>
+                    <button type="submit" class="btnStyle"><img src="button.png" class="btnImg"></button>
+                    
+                </form>
+            </div>
         </body>
 
         <header>
-            <a href="https://www.youtube.com" target="_blank">Give Encouragement</a>
+            <a href="board.html" target="_blank"><br>Give Encouragement</a>
         </header>
     </center>
 
