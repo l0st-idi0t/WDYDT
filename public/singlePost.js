@@ -1,3 +1,10 @@
+const backBtn = document.getElementById("backBtn");
+
+backBtn.addEventListener("click", () => {
+  window.location.href = "/board.html";
+});
+
+const note = document.getElementById("stickyNote");
 const commentContainer = document.getElementById("commentSection");
 const replyForm = document.getElementById("replyForm");
 const uuid = new URLSearchParams(window.location.search).get("uuid");
@@ -21,13 +28,18 @@ replyForm.addEventListener("submit", async (event) => {
   const replyInputValue = document.getElementById("replyInput").value;
 
   if (replyInputValue.trim() !== "") {
-    await addComment(uuid, replyInputValue);
+    await addComment(replyInputValue);
 
     document.getElementById("replyInput").value = "";
   }
 });
 
 (async () => {
+  const messages = await getMessagesCreatedToday();
+  const message = messages.find((message) => message["uuid"] === uuid);
+
+  note.appendChild(document.createElement("p")).innerHTML = message["content"];
+
   const replies = await fetchReplies(uuid);
   for (const reply of replies) {
     addComment(reply["content"]);

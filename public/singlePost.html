@@ -4,20 +4,18 @@
     <link rel="stylesheet" href="style.css" />
     <script src="/singlePost.js" defer></script>
   </head>
-  <form action="board.html">
-    <button class="backBtn">
-      <img src="imgs/backBtn.png" class="backBtnImg" />
-    </button>
-  </form>
+  <button class="backBtn">
+    <img id="backBtn" src="imgs/backBtn.png" class="backBtnImg" />
+  </button>
   <body>
     <center>
       <div class="pad"></div>
       <div id="stickyContainer">
-        <div class="bigSticky">
+        <div class="bigSticky" id="stickyNote">
           <div class="stickyTop"></div>
         </div>
         <div>
-          <form id="replyForm" onsubmit="getCommentInput()">
+          <form id="replyForm">
             <div class="inputBg">
               <img src="imgs/textfield.png" class="inputImg" />
               <input
@@ -35,5 +33,7 @@
         <div id="commentSection"></div>
       </div>
     </center>
+
+    <script src="/api.js"></script>
   </body>
 </html>
