@@ -143,10 +143,11 @@ button {
 .notes .note {
   background-color: #ecf570;
   padding: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
   height: fit-content;
   width: auto;
+  border: none;
+  font-family: "Indie Flower", cursive;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .board,

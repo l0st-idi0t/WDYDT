@@ -1,5 +1,6 @@
 const notesContainer = document.getElementById("todayNotesContent");
 const encouragementContainer = document.getElementById("encouragementContent");
+const colors = ["#FFEDAC", "#FEAFAF", "#A5E6EF", "#BFFDAA"];
 
 function createNote(uuid, content) {
   const note = document.createElement("button");
@@ -9,6 +10,9 @@ function createNote(uuid, content) {
   });
   note.innerHTML = content;
   note.classList.add("note");
+  // randomize color
+  note.style.backgroundColor =
+    colors[Math.floor(Math.random() * colors.length)];
 
   notesContainer.appendChild(note);
 }
@@ -18,6 +22,9 @@ function createEncouragement(content) {
 
   encouragement.innerHTML = content;
   encouragement.classList.add("note");
+  // randomize color
+  encouragement.style.backgroundColor =
+    colors[Math.floor(Math.random() * colors.length)];
 
   encouragementContainer.appendChild(encouragement);
 }
