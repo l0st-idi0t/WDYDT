@@ -28,7 +28,8 @@ replyForm.addEventListener("submit", async (event) => {
   const replyInputValue = document.getElementById("replyInput").value;
 
   if (replyInputValue.trim() !== "") {
-    await addComment(replyInputValue);
+    addComment(replyInputValue);
+    await createReply(uuid, replyInputValue);
 
     document.getElementById("replyInput").value = "";
   }
