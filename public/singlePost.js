@@ -1,3 +1,9 @@
+const backBtn = document.getElementById("backBtn")
+
+backBtn.addEventListener("click", () => {
+  window.location.href = "/board.html"
+});
+
 const commentContainer = document.getElementById("commentSection");
 
 const reply_message_uuid = new URLSearchParams(window.location.search).get(
