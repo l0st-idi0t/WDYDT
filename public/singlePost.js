@@ -1,8 +1,6 @@
 const commentContainer = document.getElementById("commentSection");
-
-const reply_message_uuid = new URLSearchParams(window.location.search).get(
-  "uuid",
-);
+const replyForm = document.getElementById("replyForm");
+const uuid = new URLSearchParams(window.location.search).get("uuid");
 
 function addComment(text) {
   const comment = document.createElement("div");
@@ -18,4 +16,20 @@ function addComment(text) {
   commentContainer.appendChild(padding);
 }
 
-function getCommentInput() {}
+replyForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const replyInputValue = document.getElementById("replyInput").value;
+
+  if (replyInputValue.trim() !== "") {
+    await addComment(uuid, replyInputValue);
+
+    document.getElementById("replyInput").value = "";
+  }
+});
+
+(async () => {
+  const replies = await fetchReplies(uuid);
+  for (const reply of replies) {
+    addComment(reply["content"]);
+  }
+})();
