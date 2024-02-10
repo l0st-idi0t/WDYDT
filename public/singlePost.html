@@ -9,26 +9,28 @@
             <img src="imgs/backBtn.png" class="backBtnImg"/>
         </button>
     </form>
-
-    <center>
-        <div class="pad"></div>
-        <div id="stickyContainer">
-            <div class="bigSticky">
-                <div class="stickyTop"></div>
-                <p>Jian is a great person</p>
+    <body>
+        <center>
+            <div class="pad"></div>
+            <div id="stickyContainer">
+                <div class="bigSticky">
+                    <div class="stickyTop"></div>
+                    <p>Jian is a great person</p>
+                </div>
+                <div>
+                    <form id="replyForm" onsubmit="getCommentInput()">
+                        <div class="inputBg">
+                            <img src="imgs/textfield.png" class="inputImg" />
+                            <input type="text" id="replyInput" class="inputText" placeholder="Leave a message!" />
+                        </div>
+                        <button type="submit" class="btnStyle">
+                            <img src="imgs/button.png" class="btnImg" />
+                        </button>
+                    </form>
+                </div>
+                <div id="commentSection"></div>
             </div>
-            <div>
-                <form id="replyForm" onsubmit="getCommentInput()">
-                    <div class="inputBg">
-                        <img src="imgs/textfield.png" class="inputImg" />
-                        <input type="text" id="replyInput" class="inputText" placeholder="Leave a message!" />
-                    </div>
-                    <button type="submit" class="btnStyle">
-                        <img src="imgs/button.png" class="btnImg" />
-                    </button>
-                </form>
-            </div>
-            <div id="commentSection"></div>
-        </div>
-    </center>
+        </center>
+    </body>
+    
 </html>
