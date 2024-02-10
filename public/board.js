@@ -1,11 +1,11 @@
 const notesContainer = document.getElementById("todayNotesContent");
 
-function createNote(id, value) {
+function createNote(id, text) {
   const note = document.createElement("textarea");
   note.setAttribute("readonly", "true");
 
   note.classList.add("note");
-  note.value = value;
+  note.value = text;
 
-  return note;
+  notesContainer.appendChild(note);
 }
