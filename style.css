@@ -99,3 +99,14 @@ img {
 button {
   cursor: url("imgs/pointer.png"), auto;
 }
+
+.box {
+  height: auto;
+}
+
+.note {
+  width: 100px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+}
