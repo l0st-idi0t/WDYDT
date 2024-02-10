@@ -36,8 +36,8 @@ async function fetchReplies(reply_message_uuid) {
               "Content-Type": "application/json",
             },
             method: "GET",
-          }
-        )
+          },
+        ),
     )
   ).json();
 }

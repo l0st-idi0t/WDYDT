@@ -1,19 +1,21 @@
 const commentContainer = document.getElementById("commentSection");
 
-function addComment(text){
-    const comment = document.createElement("div");
-    
-    comment.classList.add("comments");
-    comment.innerHTML = text;
+const reply_message_uuid = new URLSearchParams(window.location.search).get(
+  "uuid",
+);
 
-    commentContainer.appendChild(comment);
+function addComment(text) {
+  const comment = document.createElement("div");
 
-    const padding = document.createElement("div");
-    padding.classList.add("commentPad");
+  comment.classList.add("comments");
+  comment.innerHTML = text;
 
-    commentContainer.appendChild(padding);
+  commentContainer.appendChild(comment);
+
+  const padding = document.createElement("div");
+  padding.classList.add("commentPad");
+
+  commentContainer.appendChild(padding);
 }
 
-function getCommentInput(){
-    
-}
+function getCommentInput() {}

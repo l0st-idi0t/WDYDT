@@ -1,23 +1,21 @@
 const notesContainer = document.getElementById("todayNotesContent");
 const encouragementContainer = document.getElementById("encouragementContent");
 
-
-function createNote(content) {
+function createNote(uuid, content) {
   const note = document.createElement("button");
- 
-  note.setAttribute("onclick", "placeholder()")
+
+  note.addEventListener("click", () => {
+    window.location.href = `/singlepost.html?uuid=${uuid}`;
+  });
   note.innerHTML = content;
   note.classList.add("note");
 
   notesContainer.appendChild(note);
 }
 
-
-
 function createEncouragement(content) {
   const encouragement = document.createElement("button");
- 
-  encouragement.setAttribute("onclick", "placeholder()")
+
   encouragement.innerHTML = content;
   encouragement.classList.add("note");
 
@@ -125,14 +123,15 @@ Keep striving for greatness, it's within your reach.
 You're capable of achieving your wildest dreams.
 Believe in the power of your dreams, they're within reach.
 Keep going, the best is yet to come!
-`.split("\n").slice(1, 101);
+`
+  .split("\n")
+  .slice(1, 101);
 
-(async() => {
+(async () => {
   const messages = await getMessagesCreatedToday();
   for (const message of messages) {
-    createNote(message["content"]);
+    createNote(message["uuid"], message["content"]);
   }
-
 
   // Shuffle array
   const shuffled = woe.sort(() => 0.5 - Math.random());
@@ -143,4 +142,4 @@ Keep going, the best is yet to come!
   for (w of selected) {
     createEncouragement(w);
   }
-})()
+})();
