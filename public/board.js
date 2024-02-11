@@ -6,7 +6,7 @@ function createNote(uuid, content) {
   const note = document.createElement("button");
 
   note.addEventListener("click", () => {
-    window.location.href = `/singlepost.html?uuid=${uuid}`;
+    window.location.href = `/singlePost.html?uuid=${uuid}`;
   });
   note.innerHTML = content;
   note.classList.add("note");

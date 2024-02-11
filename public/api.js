@@ -1,6 +1,6 @@
 async function getMessagesCreatedToday() {
   return await (
-    await fetch("http://localhost:4000/messages_today", {
+    await fetch("https://db.sublimeful.dev:8000/messages_today", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -13,7 +13,7 @@ async function getMessagesCreatedToday() {
 async function fetchReplies(reply_message_uuid) {
   return await (
     await fetch(
-      "http://localhost:4000/fetch_replies?" +
+      "https://db.sublimeful.dev:8000/fetch_replies?" +
         new URLSearchParams(
           {
             reply_message_uuid: reply_message_uuid,
@@ -30,7 +30,7 @@ async function fetchReplies(reply_message_uuid) {
   ).json();
 }
 async function createMessage(content) {
-  await fetch("http://localhost:4000/create_message", {
+  await fetch("https://db.sublimeful.dev:8000/create_message", {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -42,7 +42,7 @@ async function createMessage(content) {
   });
 }
 async function createReply(reply_message_uuid, content) {
-  await fetch("http://localhost:4000/create_reply", {
+  await fetch("https://db.sublimeful.dev:8000/create_reply", {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
