@@ -2,8 +2,12 @@ import express from "express";
 import path from "path";
 import fs from "fs";
 import https from "https";
+import dotenv from "dotenv";
+
+dotenv.config({});
+
 const app = express();
-const port = 8080;
+const port = process.env.PORT;
 const privateKey = fs.readFileSync('./certs/privkey.pem');
 const certificate = fs.readFileSync('./certs/cert.pem');
 
