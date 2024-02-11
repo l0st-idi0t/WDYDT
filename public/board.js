@@ -14,7 +14,7 @@ function createNote(uuid, content) {
   note.style.backgroundColor =
     colors[Math.floor(Math.random() * colors.length)];
 
-  notesContainer.appendChild(note);
+  notesContainer.prepend(note);
 }
 
 function createEncouragement(content) {
